@@ -1,0 +1,27 @@
+/* Desltop */
+@media (min-width: 1200px){
+    #home-heading h3{
+        color: red;
+    }
+   
+}
+/* Medium Devices (Landscape Tables & Medium Desktops) */
+@media (min-width: 992px) and (max-width:1199px){
+    #home-heading h3{
+        color: blue;
+    }
+}
+
+/* Small Devices (Portrait Tablets & Small Desktop) */
+@media (min-width: 768px) and (max-width:991px){
+    #home-heading h3{
+        color: black;
+    }
+}
+/* Extra Small Devices (Landscape Phone ) */
+@media (max-width: 767px){
+    #home-heading h3{
+        color: rgb(211, 192, 27);
+    }
+   
+}
