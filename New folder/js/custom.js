@@ -1,5 +1,5 @@
 /*######################################
-				SERVICES
+               SERVICES
 #######################################*/
 $(function () {
 
@@ -32,7 +32,22 @@ $(function () {
         autoplay: true,
         smartSeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            //brrakpoint from 0 up
+            0: {
+                items: 1
+            },
+            //breakpoint from 480 up
+            480: {
+                items: 2
+            },
+            //breakpoint from 480 up
+            768: {
+                items: 3
+            }
+
+        }
     });
 
 });
@@ -51,6 +66,17 @@ $(function () {
 });
 
 /*######################################
+				STATS
+#######################################*/
+$(function () {
+    $('.counter').counterUp({
+        delay:10,
+        time:2000
+    });
+});
+
+
+/*######################################
 				CLIENS
 #######################################*/
 $(function () {
@@ -59,9 +85,29 @@ $(function () {
         autoplay: true,
         smartSeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            //brrakpoint from 0 up
+            0: {
+                items: 1
+            },
+            //breakpoint from 480 up
+            480: {
+                items: 3
+            },
+            //breakpoint from 768 up
+            768: {
+                items: 5
+            },
+            //breakpoint from 992 up
+            992: {
+                items: 6
+            }
+        }
     });
 });
+
+
 
 /*######################################
 				NAVIGATION
@@ -95,6 +141,18 @@ $(function () {
 //         }, 1250);
 //     });
 // });
+
+/*######################################
+	    Close Mobile Maenu Onclick
+#######################################*/
+$(function () {
+    $(".navbar-collapse ul li a").on("click touch", function () {
+
+        $(".navbar-toggle").click();
+    })
+});
+
+
 
 /// Default ////
 // $(function () {

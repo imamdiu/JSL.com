@@ -433,9 +433,9 @@ ul.pricing-spec li p{
 /*######################################
 				STATS
 #######################################*/
-#stats .content-title-underline{
-	margin-bottom: 30px;
-}
+/* #stats .content-title-underline{
+	margin-bottom: 10px;
+} */
 
 #stats-cover{
 	background-image: url("../img/bg-home.jpg")
